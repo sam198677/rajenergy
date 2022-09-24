@@ -1,13 +1,13 @@
 body {
   font-family: Montserrat;
+  background-color: #fff;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Bold";
 }
 
-h1,h2 {
-
+h1, h2 {
   font-size: 2.5rem;
   line-height: 1.5;
 }
@@ -15,7 +15,7 @@ h1,h2 {
 button {
   font-family: "Ubuntu";
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 /* title section */
@@ -24,45 +24,50 @@ button {
   color: #25316D;
 }
 
-
-
 /* Header-bar */
 .header-bar {
-  padding: 15px 15px;
+  padding: 1rem 0;
   background-color: #25316D;
   text-align: "center";
-  height: 50px;
+  height: 5rem;
 }
 
+.phone_number_header {
+  width:10rem;
+}
 .phone_number_icon {
-  color:#fff;
-  padding:5px;
-  margin: auto;
+  color: #fff;
+  padding: auto 0;
+  margin: auto 0;
   text-decoration: none;
   font-size: 0.8rem;
+  width: 1.5rem;
+
 }
 
 .email_icon {
-  color:#fff;
-  padding:5px;
-  margin: auto;
+  color: #fff;
+  padding: auto 0;
+  margin: auto 0;
   text-decoration: none;
   font-size: 0.8rem;
+  width: 1.5rem;
 }
 
 .get-quote-div {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
-
+  margin-bottom: 10px;
 }
-.get-quote {
-width: 100px;
-font-size: 0.8rem;
 
+.get-quote {
+  width: 6.5rem;
+  font-size: 0.8rem;
+  margin-top: 6px;
+  margin-bottom:6px;
 }
 
 /* brand */
-
 .navbar {
   padding: 0 0 1.5rem;
 }
@@ -80,7 +85,7 @@ font-size: 0.8rem;
 .nav-link {
   font-family: "Montserrat-Light";
   font-size: 1.1rem;
-  color:#25316D
+  color: #25316D
 }
 
 /* Download Button */
@@ -88,43 +93,134 @@ font-size: 0.8rem;
   margin: 5% 3% 5% 0;
 }
 
-/* title image */
-.title-image {
-  width: 20%;
-  transform: rotate(25deg);
+/* tagimage section*/
+
+.tag-headline {
+  color: #fff;
+  text-align: center;
+  font-size: 5.1rem;
+  width: 100%;
+  margin-left: 0;
+  padding-top: 5%;
+}
+
+.consultation-icon {
+  margin: 0 0 0.5rem 3rem;
+
+}
+#tagimage {
+  background: url('../images/Solar-image-ground.jpg');
+  height: 25rem;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 2.5;
+}
+
+/* About-us */
+.about-row {
+  height: 25rem;
+}
+
+#about-us {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding-top: 0;
+  text-align: center;
+
+}
+.about-us-text {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.about-us-image {
+  display: block;
+  object-fit: contain;
+  height:60%;
+  margin-left: 7rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   position: absolute;
 }
 
-@media (max-width:1000px) {
-  .title-image{
-    width: 60%;
-    position: relative;
-    transform: rotate(0);
+@media (max-width: 1200px) {
+  .tag-headline {
+    margin-top: 4rem;
+    font-size: 2.5rem;
   }
-  .title {
+  .consultation-icon {
+    margin-top: 0.3rem;
+    margin-left:2rem;
+    font-size: 1rem;
+  }
+  .about-us-image {
+    display:none;
+    position: relative;
+  }
+  .about-us-text {
+    font-size: 0.8rem;
     text-align: center;
   }
+
+}
+
+
+/* Carousel base class */
+
+.carousel {
+  margin-bottom: 4rem;
+  line-height: 1rem;
+  height: 50%;
+}
+
+.carousel h1 {
+  color : #25316D;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #97D2EC;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 /* feature section */
-
 #features {
-  background-color: #fff;
-  position:relative;
-  z-index: 1;
+    background-color: #fff;
+
+}
+#features h2 {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 .feature-row {
-  padding: 60px;
+  padding: 10px;
 }
 
 .feature-icon {
-  color: #ef8172;
+  color: #25316D;
   margin-bottom: 1rem;
+
 }
 
 .feature-icon:hover {
-  color: #ff4c60;
+  color: #250060;
 }
 
 .feature h3 {
@@ -147,8 +243,8 @@ p {
 }
 
 .testimonial-image {
-  width: 10%;
-  border-radius: 100%;
+  width: 20%;
+
   margin: 20px;
 }
 
@@ -160,7 +256,7 @@ p {
 }
 
 #pricing {
-  padding:100px;
+  padding: 100px;
 }
 
 .press-logo {
@@ -169,25 +265,35 @@ p {
 }
 
 .pricing-column {
-  padding:3% 2%;
+  padding: 3% 2%;
 }
 
 /* call to action */
-
 #cta {
-    background-color: #ff4c68;
-    color: #fff;
+  background-color: #ff4c68;
+  color: #fff;
 }
 
 #cta h3 {
   font-size: 2.5rem;
   line-height: 1.5;
-  width:70%;
-  margin:0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* footer section */
+
 .footer-icon {
   padding: 40px 10px;
   margin-bottom: 1rem;
+}
+
+
+/* copyright section */
+#copyright .copyright-content {
+  background-color: #25316D;
+  color:#fff;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 0;
 }
