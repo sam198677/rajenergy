@@ -109,7 +109,7 @@ button {
 
 }
 #tagimage {
-  background-image: url('/images/Solar-image-ground.jpg');
+  background-image: url('../images/Solar-image-ground.jpg');
   height: 25rem;
   background-size: 100% 100%;
   margin: 0;
